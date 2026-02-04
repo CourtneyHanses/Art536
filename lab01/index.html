@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<a-scene background="color: #FAFAFA">
+<a-scene>
     <a-box position="-2.435 1.442 -3.666" rotation="0 0 0" height="5" scale=".210 .590 3.25" color="white" shadow></a-box>
     <a-box position="0 1.442 -2.135" rotation="0 90 0" height="5" scale=".210 .590 5" color="white" shadow></a-box>
 
@@ -43,8 +43,14 @@
     <a-box position="-4.028 .711 -5.657" rotation="0 90 0" height="3" scale=".5 .440 .5" color="white" shadow></a-box>
 
     <a-box position="-2.09 .231 -4.533" rotation="0 90 0" height="3" scale=".390 .170 .390" color="lightgrey" shadow></a-box>
+
+    <a-light type="ambient" intensity="0.5"></a-light>
+    <a-light type="point" intensity="3.0" position="0 2.833 -4.448"></a-light>
 </a-scene> 
 
+<a-light type="ambient" intensity="0.5"></a-light>
+<a-light type="point" intensity="3.0"></a-light>
+<a-sky color="#eee"></a-sky>
 
     <script type="module" src="/src/main.js"></script>
 </body>
