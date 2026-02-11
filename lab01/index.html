@@ -8,6 +8,14 @@
 <body>
 
 <a-scene>
+
+    <a-assets>
+            <img id="cotton_diff" src="/room/cotton_jersey_diff_4k.jpg" alt="">
+            <img id="cotton_rough" src="/room/cotton_jersey_rough_4k.jpg" alt="">
+            <img id="cotton_nor" src="/room/cotton_jersey_nor_gl_4k.jpg" alt="">
+            <img id="cotton_ao" src="/room/cotton_jersey_ao_4k.jpg" alt="">
+        </a-assets>
+
     <a-box id="wall1" position="-2.435 1.442 -3.666" rotation="0 0 0" height="5" scale=".210 .590 3.25" color="white" shadow></a-box>
     <a-box id="wall2" position="0 1.442 -2.135" rotation="0 90 0" height="5" scale=".210 .590 5" color="white" shadow></a-box>
 
@@ -15,7 +23,7 @@
     <a-box id="wall4" position="2.408 1.442 -4.517" rotation="0 0 0" height="5" scale=".210 .590 5" color="white" shadow></a-box>
     <a-box id="wall5" position="2.307 1.891 -4.517" rotation="0 0 0" height="5" scale=".090 .280 2.020" color="white" shadow></a-box>
     <a-box id="wall6" position="1.459 1.149 -6.823" rotation="0 90 0" height="5" scale=".090 .5 1.080" color="white" shadow></a-box>
-    <a-box id="wall7" position="-2.028 1.149 -6.823" rotation="0 90 0" height="5" scale=".090 .5 1.080" color="white" shadow></a-box>
+    <a-box id="wall7" position="-2.028 1.149 -6.823" rotation="0 90 0" height="5" scale=".090 .5 1.080" color="white" shadow></a-box> 
 
     <a-box id="wall8" position="-3.410 1.442 -5.264" rotation="0 90 0" height="5" scale=".210 .590 2.170" color="white" shadow></a-box>
     <a-box id="wall9" position="-4.429 1.442 -6.060" rotation="0 0 0" height="5" scale=".210 .590 1.800" color="white" shadow></a-box>
@@ -23,7 +31,7 @@
     <a-plane id="floor1" position="0 0 -4.61" rotation="-90 0 0" width="5" height="4" scale="1 1.2 1" color="tan" shadow></a-plane>
     <a-plane id="floor2" position="-3.5 0 -6.11" rotation="-90 0 0" width="2" height="2" scale="1 .9 1" color="tan" shadow></a-plane>
 
-    <a-box id="mattress" position="1.276 .573 -3.927" rotation="0 0 0" height="2" scale="1.920 .440 2.780" color="lightgrey" shadow></a-box>
+    <a-box id="mattress" position="1.276 .573 -3.927" rotation="0 0 0" height="2" scale="1.920 .440 2.780" color="lightgrey" material="roughness: .5; metalness: 0; src: #cotton_diff; roughnessMap: #cotton_rough; normalMap: #cotton_nor; ambientOcclusionMap: #cotton_ao" shadow></a-box>
     <a-box id="headboard" position="1.276 .573 -2.437" rotation="0 0 0" height="2" scale="1.920 .870 .430" color="brown" shadow></a-box>
     <a-box id="puzzle" position="1.276 1.8 -2.289" rotation="5 0 0" height="2" scale="1.150 .420 .030" color="hotpink" shadow></a-box>
 
