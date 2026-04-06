@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+<script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.4/dist/aframe-physics-system.min.js"></script>
+<!--<script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script> -->
+</head>
+<body>
+    <a-scene >
+        <!--<a-entity ground="groundColor: green"></a-entity>-->
+        <a-sky color="#abe4f7"></a-sky>
+        <a-plane rotation="-90 0 0" width="30" height="30" color="#7BC8A4" material="color: #398453" ></a-plane>
+        <a-cylinder radius="4" height=".05" color="grey" material="color: #d1d1d1" ></a-cylinder>
+        <a-box id="walkway" position="0 0 -9.36143" height="5" color="white" geometry="depth: 11.54; height: 0.05; width: 1.34" material="color: #d1d1d1"></a-box>
+        <a-box id="stage" position="-5.85032 0.22146 0" height="5" color="white" geometry="depth: 3.71; height: 0.48; width: 2.4"></a-box>
+        <a-box id="stage-step" position="-4.51849 0.10008 0" height="5" color="white" geometry="depth: 3.71; height: 0.253; width: 0.43"></a-box>
+
+        <a-box id="booth1" position="-2.22274 0.83898 -4.68204" height="5" color="white" geometry="depth: 1.5; height: 1.45; width: 1.5" rotation="0 30 0"></a-box>
+        <a-box id="booth2" position="-4.04756 0.83898 -3.1062" height="5" color="white" geometry="depth: 1.5; height: 1.45; width: 1.5" rotation="0 54 0"></a-box>
+    </a-scene>
+</body>
+</html>
