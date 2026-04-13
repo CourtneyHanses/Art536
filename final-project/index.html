@@ -10,7 +10,11 @@
 </head>
 <body>
     <a-scene >
-        <!--<a-entity ground="groundColor: green"></a-entity>-->
+        <a-assets>
+             <a-asset-item id="rays" src="rays-03.glb"></a-asset-item>
+             <a-asset-item id="words" src="words-02.glb"></a-asset-item>
+          </a-assets>
+        
         <a-sky color="#abe4f7"></a-sky>
         <a-plane rotation="-90 0 0" width="30" height="30" color="#7BC8A4" material="color: #398453" ></a-plane>
         <a-cylinder radius="4" height=".05" color="grey" material="color: #d1d1d1" ></a-cylinder>
@@ -20,6 +24,9 @@
 
         <a-box id="booth1" position="-2.22274 0.83898 -4.68204" height="5" color="white" geometry="depth: 1.5; height: 1.45; width: 1.5" rotation="0 30 0"></a-box>
         <a-box id="booth2" position="-4.04756 0.83898 -3.1062" height="5" color="white" geometry="depth: 1.5; height: 1.45; width: 1.5" rotation="0 54 0"></a-box>
+
+        <a-gltf-model src="rays" position="-2 5 5" ></a-gltf-model>
+        <a-gltf-model src="words" position="-2 5 5" ></a-gltf-model>
     </a-scene>
 </body>
 </html>
