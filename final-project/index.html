@@ -6,7 +6,7 @@
     <title>Final Project</title>
 <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-physics-system@v4.2.4/dist/aframe-physics-system.min.js"></script>
-<!--<script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script> -->
+<!--<script src="https://unpkg.com/aframe-ground-component@0.0.4/dist/aframe-ground-component.min.js"></script>  geometry="depth: 1.5; height: 2.75; width: 1.5"-->
 
 <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
@@ -17,6 +17,7 @@
         <a-assets>
              <a-asset-item id="rays" src="rays-03.glb"></a-asset-item>
              <a-asset-item id="words" src="words-02.glb"></a-asset-item>
+             <a-asset-item id="booth" src="booth.glb"></a-asset-item>
           </a-assets>
         
         <a-sky color="#abe4f7"></a-sky>
@@ -26,17 +27,17 @@
         <a-box id="stage" position="-5.85032 0.22146 0" height="5" color="white" geometry="depth: 3.71; height: 0.48; width: 2.4"></a-box>
         <a-box id="stage-step" position="-4.51849 0.10008 0" height="5" color="white" geometry="depth: 3.71; height: 0.253; width: 0.43"></a-box>
 
-        <a-box id="booth1" position="-2.22274 0.83898 -4.68204" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 30 0"></a-box>
-        <a-box id="booth2" position="-4.04756 0.83898 -3.1062" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 54 0"></a-box>
-        <a-box id="booth3" position="2.08829 0.83898 -4.68204" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 -30 0"></a-box>
-        <a-box id="booth4" position="4.07418 0.83898 -3.1062" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 -54 0"></a-box>
-        <a-box id="booth5" position="4.94374 0.83898 -1.1236" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 10 0"></a-box>
-        <a-box id="booth6" position="4.94374 0.83898 1.05032" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 -10 0"></a-box>
-        <a-box id="booth7" position="4.07418 0.83898 3.11988" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 54 0"></a-box>
-        <a-box id="booth8" position="2.08829 0.83898 4.76144" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 30 0"></a-box>
-        <a-box id="booth9" position="0.00133 0.83898 5.2484" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5"></a-box>
-        <a-box id="booth10" position="-2.22274 0.83898 4.67448" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 -30 0"></a-box>
-        <a-box id="booth11" position="-4.04756 0.83898 3.17206" color="white" geometry="depth: 1.5; height: 2.75; width: 1.5" rotation="0 -54 0"></a-box> 
+        <a-gltf-model src="booth" id="booth1" position="-2.22274 0.83898 -4.68204" color="white" scale="0.2 .2 .2" rotation="0 30 0"></a-box>
+        <a-gltf-model src="booth" id="booth2" position="-4.04756 0.83898 -3.1062" color="white" scale="0.2 .2 .2" rotation="0 54 0"></a-box>
+        <a-gltf-model src="booth" id="booth3" position="2.08829 0.83898 -4.68204" color="white" scale="0.2 .2 .2" rotation="0 -30 0"></a-box>
+        <a-gltf-model src="booth" id="booth4" position="4.07418 0.83898 -3.1062" color="white" scale="0.2 .2 .2" rotation="0 -54 0"></a-box>
+        <a-gltf-model src="booth" id="booth5" position="4.94374 0.83898 -1.1236" color="white" scale="0.2 .2 .2" rotation="0 10 0"></a-box>
+        <a-gltf-model src="booth" id="booth6" position="4.94374 0.83898 1.05032" color="white" scale="0.2 .2 .2" rotation="0 -10 0"></a-box>
+        <a-gltf-model src="booth" id="booth7" position="4.07418 0.83898 3.11988" color="white" scale="0.2 .2 .2" rotation="0 54 0"></a-box>
+        <a-gltf-model src="booth" id="booth8" position="2.08829 0.83898 4.76144" color="white" scale="0.2 .2 .2" rotation="0 30 0"></a-box>
+        <a-gltf-model src="booth" id="booth9" position="0.00133 0.83898 5.2484" color="white" scale="0.2 .2 .2" ></a-box>
+        <a-gltf-model src="booth" id="booth10" position="-2.22274 0.83898 4.67448" color="white" scale="0.2 .2 .2" rotation="0 -30 0"></a-box>
+        <a-gltf-model src="booth" id="booth11" position="-4.04756 0.83898 3.17206" color="white" scale="0.2 .2 .2" rotation="0 -54 0"></a-box> 
 
         <a-gltf-model src="#rays" position="1.74 1.4 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02"></a-gltf-model>
         <a-gltf-model src="#words" position="1.74 .9 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02"></a-gltf-model>
