@@ -18,8 +18,8 @@
              <a-asset-item id="booth" src="booth.glb"></a-asset-item>
           </a-assets>
         
-        <a-sky color="#abe4f7"></a-sky>
-        <a-entity environment="preset: forest; groundColor: #398453; grid: cross; groundTexture: none"></a-entity>
+        <!--<a-sky color="#abe4f7"></a-sky>-->
+        <a-entity environment="preset: forest; groundColor: #398453; grid: cross; groundTexture: none; skyType: atmosphere"></a-entity>
         <!--<a-plane rotation="-90 0 0" width="30" height="30" color="#7BC8A4" material="color: #398453" class="floor"></a-plane>-->
         <a-cylinder radius="4" height=".05" color="grey" material="color: #d1d1d1" class="floor"></a-cylinder>
         <a-box id="walkway" position="0 0 -9.36143" height="5" color="white" geometry="depth: 11.54; height: 0.05; width: 1.34" material="color: #d1d1d1" class="floor"></a-box>
@@ -38,8 +38,8 @@
         <a-gltf-model src="#booth" id="booth10" position="-3.040 0 4.484" scale="35 40 35" rotation="0 150 0"></a-gltf-model>
         <a-gltf-model src="#booth" id="booth11" position="-4.690 0 2.728" scale="35 40 35" rotation="0 126 0"></a-gltf-model>
 
-        <a-gltf-model src="#rays" position="1.74 1.4 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02"></a-gltf-model>
-        <a-gltf-model src="#words" position="1.74 .9 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02"></a-gltf-model>
+        <a-gltf-model src="#rays" position="1.74 1.4 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02" gltf-model="rays-03.glb" rotation="0 180 0"></a-gltf-model>
+       <a-gltf-model src="#words" position="1.74 0.9 -6.452" rotaton="0 180 0" scale="0.02 0.02 0.02" gltf-model="words-02.glb" rotation="0 180 0"></a-gltf-model>
 
         <a-entity id="player" position="0 1.6 0">
             <!-- camera -->
