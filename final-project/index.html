@@ -19,6 +19,11 @@
              <a-asset-item id="booth" src="booth.glb"></a-asset-item>
              <img id="stageback" src="stageback.png" alt="">
              <a-asset-item id="Drums" src="Drums.glb"></a-asset-item>
+
+            <img id="rough" src="rough.jpg" alt="">
+            <img id="nor" src="nor.jpg" alt="">
+            <img id="ao" src="ao.jpg" alt="">
+            <img id="diff" src="diff.jpg" alt="">
           </a-assets>
         
         <!--<a-sky color="#abe4f7"></a-sky>-->
@@ -26,8 +31,8 @@
         <!--<a-plane rotation="-90 0 0" width="30" height="30" color="#7BC8A4" material="color: #398453" class="floor"></a-plane>-->
         
         <a-entity id="main" scale="1.75 1.75 1.75" shadow>
-        <a-cylinder radius="4" height=".05" color="grey" material="color: #d1d1d1" class="floor"></a-cylinder>
-        <a-box id="walkway" position="0 0 -9.36143" height="5" color="white" geometry="depth: 11.54; height: 0.05; width: 1.34" material="color: #d1d1d1" class="floor"></a-box>
+        <a-cylinder radius="4" height=".05" color="grey" material="ambientOcclusionMap: #ao; color: #d1d1d1; normalMap: #nor; roughnessMap: #rough" class="floor"></a-cylinder>
+        <a-box id="walkway" position="0 0 -9.36143" height="5" color="white" geometry="depth: 11.54; height: 0.05; width: 1.34" material="color: #d1d1d1" material="ambientOcclusionMap: #ao; color: #d1d1d1; normalMap: #nor; roughnessMap: #rough" class="floor"></a-cylinder></a-box>
         <a-gltf-model id="groundsun" src="#rays" position="0 -0.06 0" rotaton="0 0 0" scale="0.132 0.132 0.132" shadow="" gltf-model="rays-03.glb" rotation="135 150 90"></a-gltf-model>
         <a-box id="stage" position="-5.85032 0.22146 0" height="5" color="white" geometry="depth: 3.71; height: 0.48; width: 2.4"></a-box>
         <a-box id="stage-step" position="-4.51849 0.10008 0" height="5" color="white" geometry="depth: 3.71; height: 0.253; width: 0.43"></a-box>
